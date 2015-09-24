@@ -5,8 +5,8 @@ android {
     buildToolsVersion "22.0.1"
 
     defaultConfig {
-        applicationId "com.steelkiwi.instagramhelper"
-        minSdkVersion 9
+        applicationId "com.steelkiwi.exampleinstagramhelper"
+        minSdkVersion 10
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
@@ -21,4 +21,6 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':instagramhelper')
+    compile 'com.android.support:support-v4:22.0.0'
 }

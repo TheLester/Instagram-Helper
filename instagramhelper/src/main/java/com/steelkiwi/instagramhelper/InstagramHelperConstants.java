@@ -11,7 +11,7 @@ public abstract class InstagramHelperConstants {
     static final String CLIENT_ID_DEF         = "?client_id=";
     static final String REDIRECT_URI_DEF      = "&redirect_uri=";
     static final String RESPONSE_TYPE_DEF     = "&response_type=token";
-    static final String ACCESS_TOKEN_TYPE_DEF = "?access_token= ";
+    static final String ACCESS_TOKEN_TYPE_DEF = "?access_token=";
     //get self user info
     static final String SELF_INFO_URL         = "https://api.instagram.com/v1/users/self/";
 }

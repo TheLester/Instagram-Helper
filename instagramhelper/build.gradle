@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
 
+
 android {
     compileSdkVersion 22
     buildToolsVersion "22.0.1"
@@ -19,4 +20,5 @@ android {
 }
 dependencies {
     compile 'com.google.code.gson:gson:2.3.1'
+    compile 'com.pnikosis:materialish-progress:1.7'
 }

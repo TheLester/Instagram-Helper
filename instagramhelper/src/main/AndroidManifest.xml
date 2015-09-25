@@ -1,4 +1,7 @@
-<manifest package="com.steelkiwi.instagramhelper">
+<manifest package="com.steelkiwi.instagramhelper"
+          xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <application/>
+    <application>
+        <activity android:name=".InstagramLoginActivity"></activity>
+    </application>
 </manifest>

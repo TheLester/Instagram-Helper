@@ -5,8 +5,7 @@ This is a library project which makes the instagram login much easier. *Works fr
 
 Implemented with Instagram API client-Side (Implicit) authentication, which doesn't require store CLIENT SECRET on the client, [more info...](https://instagram.com/developer/authentication/) 
 # Gradle
-Add it to your project build.gradle
-```
+
 Add it to your app module build gradle.
 ```
 dependencies {

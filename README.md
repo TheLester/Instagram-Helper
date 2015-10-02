@@ -4,6 +4,15 @@ This is a library project which makes the instagram login much easier. *Works fr
 ![sample](https://github.com/TheLester/Instagram-Helper/blob/master/presentation/login.gif)
 
 Implemented with Instagram API client-Side (Implicit) authentication, which doesn't require store CLIENT SECRET on the client, [more info...](https://instagram.com/developer/authentication/) 
+# Gradle
+Add it to your project build.gradle
+```
+Add it to your app module build gradle.
+```
+dependencies {
+      compile  'com.github.thelester:Instagram-Helper:1.0.0'
+}
+```
 Usage
 ======
 Initalize instagram-helper with your redirect_url and client_id (obtained [here] (https://instagram.com/developer/clients/manage/))

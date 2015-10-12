@@ -15,7 +15,7 @@ dependencies {
 Usage
 ======
 Initalize instagram-helper with your redirect_url and client_id (obtained [here] (https://instagram.com/developer/clients/manage/))
-```    
+```java    
 InstagramHelper instagramHelper = new InstagramHelper.Builder()
                                       .withClientId(CLIENT_ID)
                                       .withRedirectUrl(REDIRECT_URL)
@@ -26,8 +26,8 @@ then launch Login activity from your activity:
 instagramHelper.loginFromActivity(yourActivity);
 ```
 and handle result:
-```
- @Override
+```java
+    @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == InstagramHelperConstants.INSTA_LOGIN && resultCode == RESULT_OK) {

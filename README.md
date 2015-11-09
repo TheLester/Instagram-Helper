@@ -1,4 +1,5 @@
-# Instagram-Helper
+# Instagram-Helper   [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Instagram--Helper-brightgreen.svg?style=flat-square)](http://android-arsenal.com/details/1/2753)
+
 This is a library project which makes the instagram login much easier. *Works from Android API 10 (Gingerbread) and above*.
 
 ![sample](https://github.com/TheLester/Instagram-Helper/blob/master/presentation/login.gif)

@@ -23,10 +23,12 @@ public class InstagramHelper {
 
     private String clientId;
     private String redirectUri;
+    private String scope;
 
     private InstagramHelper(String clientId, String redirectUri) {
         this.clientId = clientId;
         this.redirectUri = redirectUri;
+        this.scope = scope;
     }
 
     public void loginFromActivity(Activity context) {
@@ -47,6 +49,7 @@ public class InstagramHelper {
     public static final class Builder {
         private String clientId;
         private String redirectUrl;
+        private String scope;
 
         public Builder withClientId(String clientId) {
             this.clientId = checkNotNull(clientId, "clientId == null");
@@ -57,7 +60,12 @@ public class InstagramHelper {
             this.redirectUrl = checkNotNull(redirectUrl, "redirectUrl == null");
             return this;
         }
-
+        
+        public Builder withScope(String scope) {
+            this.scope = checkNotNull(scope, "scope == null");
+            return this;
+        }
+        
         public InstagramHelper build() {
             return new InstagramHelper(clientId, redirectUrl);
         }

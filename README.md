@@ -17,9 +17,12 @@ Usage
 ======
 Initalize instagram-helper with your redirect_url and client_id (obtained [here] (https://instagram.com/developer/clients/manage/))
 ```java    
+String scope = "basic+public_content+follower_list+comments+relationships+likes";
+//scope is for the permissions
 InstagramHelper instagramHelper = new InstagramHelper.Builder()
                                       .withClientId(CLIENT_ID)
                                       .withRedirectUrl(REDIRECT_URL)
+                                      .withScope(scope)
                                       .build();
  ```
 then launch Login activity from your activity:

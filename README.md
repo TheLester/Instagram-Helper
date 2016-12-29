@@ -10,7 +10,7 @@ Implemented with Instagram API client-Side (Implicit) authentication, which does
 Add it to your app module build gradle.
 ```
 dependencies {
-      compile  'com.github.thelester:Instagram-Helper:1.0.0'
+      compile  'com.github.thelester:Instagram-Helper:1.1.1'
 }
 ```
 Usage
@@ -22,7 +22,7 @@ String scope = "basic+public_content+follower_list+comments+relationships+likes"
 InstagramHelper instagramHelper = new InstagramHelper.Builder()
                                       .withClientId(CLIENT_ID)
                                       .withRedirectUrl(REDIRECT_URL)
-                                      .withScope(scope)
+                                      .withScope(scope) // for example likes+comments
                                       .build();
  ```
 then launch Login activity from your activity:
@@ -47,13 +47,13 @@ and handle result:
         }
 ````
 # Dependencies
- * [Gson 2.3.1](https://github.com/google/gson)
+ * [Gson 2.4](https://github.com/google/gson)
  * [Materialish progress 1.7](https://github.com/pnikosis/materialish-progress)
 
 
 License
 -------
-    Copyright 2015 Dogar Dmitry
+    Copyright 2016 Dogar Dmitry
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

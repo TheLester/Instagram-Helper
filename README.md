@@ -22,7 +22,7 @@ String scope = "basic+public_content+follower_list+comments+relationships+likes"
 InstagramHelper instagramHelper = new InstagramHelper.Builder()
                                       .withClientId(CLIENT_ID)
                                       .withRedirectUrl(REDIRECT_URL)
-                                      .withScope(scope) // for example likes+comments
+                                      .withScope(scope)
                                       .build();
  ```
 then launch Login activity from your activity:
